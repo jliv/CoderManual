@@ -21,16 +21,19 @@
                 <%= f.select :job_title, ['Developer', 'Designer', 'Entrepreneur', 'Investor'], {}, class: 'form-control' %>
             </div>
             <div class="form-group">
-                <%= f.label :phone_number %>
+                <%= f.label :phone %>
                 <%= f.text_field :phone_number, class: 'form-control' %>
             </div>
             <div class="form-group">
-                <%= f.label :contact_email %>
+                <%= f.label :email %>
                 <%= f.text_field :contact_email, class: 'form-control' %>
             </div>
             <div class="form-group">
-                <%= f.label :description %>
+                <%= f.label :summary %><p>(What's your story?)</p>
                 <%= f.text_area :description, class: 'form-control' %>
+            </div>
+            <div class="form-group">
+                <%= f.submit "Update Profile", class: 'btn btn-primary' %>
             </div>
             <% end %>
         </div>
