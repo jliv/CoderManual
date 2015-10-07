@@ -5,19 +5,19 @@ class ProfilesController < ApplicationController
         @profile = @user.build_profile
     end
     
-    def create
-        @user = User.find( params[:user] )
+    def create 
+        @user = User.find( params[:user_id] )
         @profile = @user.build_profile(profile_params)
         if @profile.save
-      flash[:success] = "Profile Updated!"
-      redirect_to user_path( params[:user_id] )
+            flash[:success] = "Profile Updated!"
+            redirect_to user_path( params[:user_id] )
     else
-      render action: :new
+            render action: :new
         end
     end
     
     private
         def profile_params
-            params.requre(:profile).permit(:first_name, :last_name, :location, :job_title, :phone_numer, :contact_email, :description)
+        params.require(:profile).permit(:first_name, :last_name, :location, :job_title, :phone_number, :contact_email, :description)
         end
 end
