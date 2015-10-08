@@ -25,8 +25,20 @@
   border-color: #46b8da;
 }
 
-.image-tag {
--webkit-box-shadow: 0px 4px 15px 0px rgba(50, 50, 50, 0.82);
+.well.white.bg {
+background-color: white;  
+}
+
+.user-index-avatar {
+border-radius: 50%;
+}
+
+.user-profile-avatar {
+  -webkit-box-shadow: 0px 4px 15px 0px rgba(50, 50, 50, 0.82);
 -moz-box-shadow:    0px 4px 15px 0px rgba(50, 50, 50, 0.82);
 box-shadow:         0px 4px 15px 0px rgba(50, 50, 50, 0.82);
+}
+
+h2 {
+  margin-top: 5px;
 }
