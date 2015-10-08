@@ -19,9 +19,9 @@
                 <h2><%= user.profile.first_name %> <%= user.profile.last_name %></h2>
               <% end %>
               <p>
-                <h4><%= user.profile.job_title %></h4>
+                <h4><%= user.profile.job_title %>
                 <% if user.plan_id == 2 %>
-                  <span class="label label-danger inline-block">PRO</span>
+                  <span class="label label-danger">PRO</span></h4>
                 <% end %>
               </p>
               <h6><%= user.profile.location %></h6>
